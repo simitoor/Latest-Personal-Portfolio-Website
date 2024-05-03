@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simarjeet's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/9acc7ad098.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Simarjeet (1).png" alt="logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi,I'm <span>Simarjeet</span> <br>Singh from India</h1>
+            <p>Web <span>Developer</span></p>
+        </div>
+      </div>
+    </div>
+<!------------about-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/profile_phot2.png" alt="" class="profile-image"/>
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p class="aboutme">I am pursuing my<span> B.E. in Computer Engineering</span>. With a strong passion for technology and problem‑solving, I am eager to learn and apply my knowledge in the field of computer engineering. My goal is to leverage my technical skills and creativity to develop innovative solutions and contribute to the industry.            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Education')"">Education</p>
+              
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>Technical skills</span>
+                        Java, C, C++, Object-Oriented Programming System (OOPs),<br> Data Structures and Algorithms, Database Management System (DBMS),<br> HTML, CSS, JavaScript, Bootstrap, Computer Networks (CN),<br> Operating System (OS).
+                    </li>
+                    <li><span>Soft skills</span>Effective Communication, Time Management, Teamwork ,<br>Problem Solving, Critical Thinking
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li>
+                        <span>Thapar Institute of Engineering and Technology</span><br>
+                        B.E.&nbsp;(Computer Engineering)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2021-2025
+                    </li>
+                    <li><span>Sidhu Memorial Public Sen. Sec. School</span>
+                    12th&nbsp;&nbsp;&nbsp;&nbsp; 2020</li>
+                    <li><span>Punjab Public School</span>
+                    10th&nbsp;&nbsp;&nbsp;&nbsp; 2018</li>
+                </ul>
+            </div>
+          
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/chat-app.avif" >
+                    <div class="layer">
+                        <h3>Chat Application</h3>
+                        <p>Stay connected effortlessly with our intuitive chat application. Chat, share, and collaborate seamlessly across devices with friends, family, and colleagues.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/news.png" >
+                    <div class="layer">
+                        <h3>News Web Application</h3>
+                        <p>Your go-to source for breaking news, insightful analysis, and global updates. Stay informed, stay ahead.</p>
+                        <a href="https://simitoor.github.io/News-Web-Application-Project-/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/personalportfolio.jpg" >
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Your online showcase for talent and achievements. Make an impact with your personalized portfolio.</p>
+                        <a href="https://simitoor.github.io/News-Web-Application-Project-/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/simitoor?tab=repositories" class="btn">See more on github</a>
+        </div>
+    </div>
+    <!---------Contact Me-->
+    <div id="contact">
+        <div class="conatiner">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>simitoor007@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+919463575400</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/simarjeet-singh-ba6a76224/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/simitoor"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Simarjeet_Singh.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet"> 
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Simarjeet. Made with <i class="fas fa-heart"></i> by Simarjeet Singh</p>
+        </div>
+    </div>
+    <script>
+      var tablinks=document.getElementsByClassName("tab-links");  
+      var tabcontents=document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+        }
+        function closemenu()
+        {
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzyZOq8HtixA_Nu0iXQx2dZ4y0CGTXb8KFsZcWaboI3jInFWdF8Okj_J7R4mCqKJcca/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                 msg.innerHTML="Message sent successfully"
+                 setTimeout(function(){
+                    msg.innerHTML=""
+                 },5000)
+                 form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+  </body>
+</html>
